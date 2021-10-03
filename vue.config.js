@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/vue-prim-bazalt/',
+  publicPath: '/',
   transpileDependencies: [
     'vuetify'
   ]
