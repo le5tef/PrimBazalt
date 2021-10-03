@@ -1,8 +1,8 @@
 <template>
-  <div style="position: relative" class="pb-16">
+  <v-container fluid class="pb-16">
     <v-row>
-      <v-col cols="12" offset-xs="2" offset-sm="3" class="mt-8">
-        <span class="about-company text-h4" style="font-weight: 500"
+      <v-col cols="12" offset-xs="1" xs="11" offset-sm="3" sm="9" class="mt-8">
+        <span class="about-company text-h4 underline" style="font-weight: 500"
           >О компании</span
         >
       </v-col> </v-row
@@ -34,7 +34,7 @@
       >
         <span
           class="text-h7 text-md-h5"
-          style="font-weight: 200; color: #282c75"
+          style="font-weight: 300; color: #414141"
         >
           Основные активы "НРК" - золотые месторождения, находящиеся в
           Свердловской и Магаданской областях, Забайкальском и Приморском краях,
@@ -46,33 +46,19 @@
         </span>
       </v-col>
     </v-row>
-    <!-- <v-row class="d-flex align-end">
-      <v-col cols="12" offset-sm="1" sm="4">
-        <v-img src="../assets/images/1.jpg"></v-img>
-      </v-col>
-      <v-col cols="12" sm="4" offset-sm="2">
-        <v-img src="../assets/images/2.jpg"> </v-img>
-      </v-col>
-      <v-col> </v-col>
-    </v-row> -->
-  </div>
+  </v-container>
 </template>
 
 <script>
 </script>
 
-<style>
+<style scoped>
 .color-bkg {
-  background-color: #282c75;
+  background-color: #414141;
 }
-.about-company111:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 3px;
-  content: "";
-  background: #fed62e;
-  border-radius: 10px;
+.underline {
+  border-bottom: 3px solid #ffa600;
+  display: inline-block;
+  padding: 0px 7px;
 }
 </style>

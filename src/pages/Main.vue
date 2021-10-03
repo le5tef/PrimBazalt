@@ -1,24 +1,28 @@
 <template>
   <v-app>
-    <Carousel class="car-shadow" />
-    <Goods class="px-16 pt-16" />
-    <AboutCompany class="ac-shadow" />
-    <Slider class="pa-4" />
+    <Carousel />
+    <Sliders />
+    <Contacts />
+
+    <!-- <Goods class="pt-16" /> -->
+    <!-- <AboutCompany class="ac-shadow" /> -->
   </v-app>
 </template>
 
 <script>
 import Carousel from "../components/Carousel.vue";
-import AboutCompany from "../components/AboutCompany.vue";
-import Slider from "../components/Slider.vue";
-import Goods from "../components/Goods.vue";
+import Contacts from "../components/Contacts.vue";
+// import AboutCompany from "../components/AboutCompany.vue";
+import Sliders from "../components/Sliders.vue";
+// import Goods from "../components/Goods.vue";
 
 export default {
   components: {
     Carousel,
-    AboutCompany,
-    Slider,
-    Goods,
+    Contacts,
+    // AboutCompany,
+    Sliders,
+    // Goods,
   },
 
   data: () => ({}),

@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Header />
-    <v-main>
+    <v-main class="app">
       <router-view></router-view>
     </v-main>
     <Footer />
@@ -19,3 +19,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.app {
+  background-color: rgb(230, 230, 230);
+}
+</style>

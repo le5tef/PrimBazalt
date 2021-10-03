@@ -1,18 +1,20 @@
 <template>
   <v-col class="mx-8">
-    <v-card class="mx-auto" max-width="250">
-      <v-img :src="currentGood.src" height="170px"></v-img>
+    <v-card
+      class="mx-auto"
+      width="30
+    0"
+    >
+      <v-img :src="currentGood.src" height="220px"></v-img>
 
       <v-card-title>
         <span style="word-break: break-word">{{ currentGood.title }}</span>
       </v-card-title>
 
       <v-card-actions>
-        <v-spacer></v-spacer>
-
-        <v-btn icon @click="show = !show">
-          <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
-        </v-btn>
+        <v-spacer />
+        <v-btn icon @click="show = !show"> Подробнее </v-btn>
+        <v-spacer />
       </v-card-actions>
 
       <v-expand-transition>
@@ -31,7 +33,7 @@
 export default {
   props: {
     good: {
-      type: String,
+      type: Number,
     },
   },
   computed: {
@@ -40,19 +42,19 @@ export default {
         case 1:
           return {
             src: require("../assets/goods/1.jpg"),
-            title: "Ж/Б конструкции",
+            title: "Ж/Д Отгрузки",
             subtitle: "Материал для железобетонных конструкций",
           };
         case 2:
           return {
             src: require("../assets/goods/2.jpg"),
-            title: "Асфальт",
+            title: "Мобильные , дробильные комплексы",
             subtitle: "Материал для изготовления асфальта",
           };
         case 3:
           return {
             src: require("../assets/goods/3.jpg"),
-            title: "Застройку домов",
+            title: "Полстационарные дробильные комплексы",
             subtitle: "Подсыпка под застройку домов",
           };
         case 4:

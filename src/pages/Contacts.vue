@@ -4,10 +4,12 @@
       cols="12"
       offset-md="2"
       md="3"
-      style="background-color: #282c75; color: white"
+      style="background-color: #414141; color: white"
     >
       <v-container>
-        <div class="text-h4 text-md-h3">Контакты</div>
+        <div class="text-h4 text-md-h3 underline" style="color: white">
+          Контакты
+        </div>
         <div class="text-h5 text-md-h4">Номер телефона:</div>
         <div class="text-h6 text-md-h5">+7(924)320-97-95</div>
         <div class="text-h5 text-md-h4">Наш адрес:</div>
@@ -48,4 +50,11 @@ export default {};
 </script>
 
 <style>
+.underline {
+  border-bottom: 3px solid #ffa600;
+
+  display: inline-block;
+  padding: 0px 7px;
+  font-weight: 700;
+}
 </style>
